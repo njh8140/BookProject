@@ -36,6 +36,7 @@ public class BookDao {
 			pst.setInt(8, book.getId());
 			
 			return pst.executeUpdate();
+			
 		}catch(Exception e){
 			throw e;
 		}finally{
@@ -191,4 +192,5 @@ public class BookDao {
 		try{if(con != null) con.close();}catch(SQLException e){}
 	}
 }
+	
 }

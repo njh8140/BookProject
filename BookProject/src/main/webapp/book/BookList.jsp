@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" import="java.util.ArrayList,vo.Book"%>
+pageEncoding="UTF-8" import="java.util.ArrayList,vo.Book"%>
 <%@ taglib uri="jakarta.tags.core" prefix="c" %>
 <!DOCTYPE html>
 <html>
@@ -15,13 +15,13 @@
 			<input type="submit" value="검색">
 		</form>
 	<hr>
-	<c:forEach var="s" items="${requestScope.books}">
-		${s.id}, 
-		<a href="update.do?no=${s.id}">${s.title}</a>, 
-		${s.author}, 
-		${s.category}, 
-		${s.publisher}, 
-		${s.price} <br>
+	<c:forEach var="b" items="${requestScope.books}">
+		${b.id}, 
+		<a href="update.do?id=${b.id}">${b.title}</a>, 
+		${b.author}, 
+		${b.category}, 
+		${b.publisher}, 
+		${b.price} <br>
 	</c:forEach>
 </body>
 </html>

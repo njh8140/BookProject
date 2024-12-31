@@ -13,6 +13,7 @@
 		<table>
 			<tr><th>책제목</th><td><input type="text" name="title"></td></tr>
 			<tr><th>저자</th><td><input type="text" name="author"></td></tr>
+			<!-- <tr><th>카테고리</th><td><input type="text" name="category"></td></tr> -->
 			
 			<tr><th><label for="category">카테고리</label></th>
 			<td>
